@@ -1,2 +1,1 @@
 # EduLife
-Website for Education

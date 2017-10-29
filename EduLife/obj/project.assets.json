@@ -13110,7 +13110,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
-      "Microsoft.AspNetCore.Authentication.Facebook >= 2.0.0",
+      "Microsoft.EntityFrameworkCore.Tools >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.0"
     ]
@@ -13125,11 +13125,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "D:\\FreeWalkers\\EduLife-master\\EduLife\\EduLife.csproj",
+      "projectUniqueName": "D:\\Sites\\EduLife\\EduLife\\EduLife.csproj",
       "projectName": "EduLife",
-      "projectPath": "D:\\FreeWalkers\\EduLife-master\\EduLife\\EduLife.csproj",
+      "projectPath": "D:\\Sites\\EduLife\\EduLife\\EduLife.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\FreeWalkers\\EduLife-master\\EduLife\\obj\\",
+      "outputPath": "D:\\Sites\\EduLife\\EduLife\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13159,11 +13159,13 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.Facebook": {
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "2.0.0"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "2.0.0"
           },

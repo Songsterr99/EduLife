@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduLife", "EduLife\EduLife.csproj", "{7A937F25-46B8-411A-B692-F00171FBB15F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EduLife", "EduLife\EduLife.csproj", "{63DC8D0E-9C3F-401A-998D-83BE05ABFB67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7A937F25-46B8-411A-B692-F00171FBB15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A937F25-46B8-411A-B692-F00171FBB15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A937F25-46B8-411A-B692-F00171FBB15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A937F25-46B8-411A-B692-F00171FBB15F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63DC8D0E-9C3F-401A-998D-83BE05ABFB67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63DC8D0E-9C3F-401A-998D-83BE05ABFB67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63DC8D0E-9C3F-401A-998D-83BE05ABFB67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63DC8D0E-9C3F-401A-998D-83BE05ABFB67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EE015CF2-7849-485C-8F23-E7C0621ABD26}
+		SolutionGuid = {F77794BD-3DD7-49F6-B830-BC89617CEFF4}
 	EndGlobalSection
 EndGlobal
