@@ -33,6 +33,19 @@ namespace EduLife
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddAuthentication().AddFacebook(facebookOptions =>
+            {
+                facebookOptions.AppId = "1946481412275019";
+                facebookOptions.AppSecret = "dc9ed90b787db35899b77293f267c3a7";
+            });
+
+            services.AddAuthentication().AddTwitter(twitterOptions =>
+            {
+                twitterOptions.ConsumerKey = "pdN5kTiVFkzeo699SJqY6Bk1C";
+                twitterOptions.ConsumerSecret = "XP7AbKF9j8VhastEUMBZgjPB61lVGv3qntxsc94BYcqHtOaiVi";
+            });
+
+
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
