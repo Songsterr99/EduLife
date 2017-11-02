@@ -1,7 +1,27 @@
-﻿@{
+﻿@model IEnumerable<EduLife.Models.Instruction>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+<<table class="table">
+	<tr>
+		<th>
+			Instructions:
+		</th>
+	</tr>
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>@item.InstructionID</td>
+			<td>
+				<a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-id="@item.InstructionID"> Edit </a>
+			</td>
+			<td>
+				<form asp-action="Delete" asp-route-id="@item.InstructionID" methos="post">
+					<button type="submit" class="btn btn-sm btn-danger"> Delete</button>
+				</form>
+			</td>
+		</tr>
 
-</div>
+	}
+</table>

@@ -5,8 +5,8 @@ D:\Sites\EduLife\EduLife\bin\Debug\netcoreapp2.0\EduLife.dll
 D:\Sites\EduLife\EduLife\bin\Debug\netcoreapp2.0\EduLife.pdb
 D:\Sites\EduLife\EduLife\obj\Debug\netcoreapp2.0\EduLife.csprojResolveAssemblyReference.cache
 D:\Sites\EduLife\EduLife\obj\Debug\netcoreapp2.0\EduLife.csproj.CoreCompileInputs.cache
-D:\Sites\EduLife\EduLife\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 D:\Sites\EduLife\EduLife\obj\Debug\netcoreapp2.0\EduLife.AssemblyInfoInputs.cache
 D:\Sites\EduLife\EduLife\obj\Debug\netcoreapp2.0\EduLife.AssemblyInfo.cs
 D:\Sites\EduLife\EduLife\obj\Debug\netcoreapp2.0\EduLife.dll
 D:\Sites\EduLife\EduLife\obj\Debug\netcoreapp2.0\EduLife.pdb
+D:\Sites\EduLife\EduLife\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
