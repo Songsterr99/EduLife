@@ -4,17 +4,21 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 using EduLife.Data;
 using EduLife.Models;
+using EduLife.Models.InstructionViewModel;
 
 namespace EduLife.Controllers
 {
     public class HomeController : Controller
     {
         private ApplicationDbContext _context;
-        public HomeController(ApplicationDbContext context)
+        private UserManager<ApplicationUser> _userManager;
+        public HomeController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         public IActionResult Index()
@@ -22,11 +26,33 @@ namespace EduLife.Controllers
             return View(_context.Instructions.ToList());
         }
 
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(InstructionViewModel model )
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.GetUserAsync(HttpContext.User);
+                var instruction = new Instruction
+                {
+                    InstructionID = model.InstructionID,
+                    Content = model.InstructionID,
+                    CreateTime = DateTime.Now,
+                    ApplicationUserID = user.Id
+                };
+                _context.Add(instruction);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+
+            }
+            return View(model);
+        }
         //[HttpPost]
         //public async Task<IActionResult> Create(Instruction instruction)
         //{

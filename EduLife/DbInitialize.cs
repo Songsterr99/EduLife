@@ -32,8 +32,16 @@ namespace EduLife
                 {
                     await userManager.AddToRoleAsync(admin, "admin");
                 }
-                Instruction instruction = new Instruction { InstructionID = "Work", Content = "I will tell", CreateTime = DateTime.Parse("2017-02-02"), ApplicationUserID = admin.Id };
-                Instruction instruction2 = new Instruction { InstructionID = "Worker", Content = "I will tell you", CreateTime = DateTime.Parse("2017-02-02"), ApplicationUserID = admin.Id };
+                Instruction instruction = new Instruction {
+                    InstructionID = "Work",
+                    Content = "I will tell",
+                    CreateTime = DateTime.Parse("2017-02-02"),
+                    ApplicationUserID = admin.Id };
+                Instruction instruction2 = new Instruction {
+                    InstructionID = "Worker",
+                    Content = "I will tell you",
+                    CreateTime = DateTime.Parse("2017-02-02"),
+                    ApplicationUserID = admin.Id };
                 context.Instructions.Add(instruction);
                 context.Instructions.Add(instruction2);
                 context.SaveChanges();
@@ -48,9 +56,20 @@ namespace EduLife
                 {
                     await userManager.AddToRoleAsync(admin, "admin");
                 }
-                Instruction instruction = new Instruction { InstructionID = "Work", Content = "I will tell", CreateTime = DateTime.Parse("2017-02-02"), ApplicationUserID = admin.Id };
-                Instruction instruction2 = new Instruction { InstructionID = "Worker", Content = "I will tell", CreateTime = DateTime.Parse("2017-02-02"), ApplicationUserID = admin.Id };
-                Instruction instruction3 = new Instruction { InstructionID = "Song", Content = "I will tell", CreateTime = DateTime.Parse("2017-02-02"), ApplicationUserID = admin.Id };
+                Instruction instruction = new Instruction {
+                    InstructionID = "Work",
+                    Content = "I will tell",
+                    CreateTime = DateTime.Parse("2017-02-02"),
+                    ApplicationUserID = admin.Id };
+                Instruction instruction2 = new Instruction {
+                    InstructionID = "Worker",
+                    Content = "I will tell",
+                    CreateTime = DateTime.Parse("2017-02-02"),
+                    ApplicationUserID = admin.Id };
+                Instruction instruction3 = new Instruction { InstructionID = "Song",
+                    Content = "I will tell",
+                    CreateTime = DateTime.Parse("2017-02-02"),
+                    ApplicationUserID = admin.Id };
                 context.Instructions.Add(instruction);
                 context.Instructions.Add(instruction2);
                 context.Instructions.Add(instruction3);

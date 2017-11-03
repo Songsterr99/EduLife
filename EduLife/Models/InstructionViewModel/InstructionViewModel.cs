@@ -12,6 +12,6 @@ namespace EduLife.Models.InstructionViewModel
         public string InstructionID { get; set; }
 
         [Required]
-        public string Password { get; set; }
+        public string Content { get; set; }
     }
 }
