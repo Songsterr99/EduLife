@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using EduLife.Data;
 using EduLife.Models;
 using EduLife.Models.InstructionViewModel;
+using Microsoft.EntityFrameworkCore;
 
 namespace EduLife.Controllers
 {
@@ -52,6 +53,18 @@ namespace EduLife.Controllers
 
             }
             return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit()
+        {
+            var user = await _userManager.GetUserAsync(HttpContext.User);
+            var instrustions = from inst in _context.Instructions
+                               where inst.ApplicationUser == user
+                               select inst;
+
+
+            return View(await instrustions.AsNoTracking().ToListAsync());
         }
         //[HttpPost]
         //public async Task<IActionResult> Create(Instruction instruction)
